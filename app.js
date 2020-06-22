@@ -9,8 +9,7 @@ app.use(express.static("public"));
 
 app.get("/", function(req, res) {
   console.log("Received a request for /");
-  res.render("home");
-  res.end();
+
 });
 
 app.get("/home", function(req, res) {
