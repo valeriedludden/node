@@ -1,17 +1,17 @@
 const express = require("express");
 const PORT = process.env.PORT || 5000;
-const bodyParser = require("body-parser");
+// const bodyParser = require("body-parser");
 const app = express();
 
 app.use(express.static("public"));
-app.use(bodyParser.urlencoded({extended: true}));
+// app.use(bodyParser.urlencoded({extended: true}));
 
 let rate = 0;
 
 app.get("/", function(req, res) {
   console.log("Received a request for /");
-  res.render("home");
-  res.end();
+  // res.render("home");
+  // res.end();
 });
 
 app.get("/home", function(req, res) {
