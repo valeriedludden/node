@@ -38,18 +38,18 @@ app.get("/home", function (req, res) {
 //   const params = {weight: weight, mail: mail};
 //   res.render("/rate", params );
 // });
-getPostage(res, req){
-  let weight = req.query.weight;
-  let mail = req.query.mail;
-  const params = {weight: weight, mail: mail};
-  postRates(res, weight, mail)
-}
-
-postRatesres(res, weight, mail){
-  const params = { weight: weight, mail:mail };
-  res.render('/rate', params)
-
-}
+// getPostage(res, req){
+//   let weight = req.query.weight;
+//   let mail = req.query.mail;
+//   const params = {weight: weight, mail: mail};
+//   postRates(res, weight, mail)
+// }
+//
+// postRatesres(res, weight, mail){
+//   const params = { weight: weight, mail:mail };
+//   res.render('/rate', params)
+//
+// }
 app.listen(PORT, function() {
   console.log("The server is up and listening on port 5000");
 });
