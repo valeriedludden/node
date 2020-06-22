@@ -19,7 +19,12 @@ app.get("/", function(req, res) {
 
 });
 
-app.get("/home", getPostage);
+// app.get("/home", getPostage);
+app.get("/home", function (req, res) {
+  console.log("Received a request for the HOME page");
+  res.render("/home")
+  res.end()
+});
 
 // app.get("/rate", function(req, res){
 //   console.log("Received a request for the rate page")
