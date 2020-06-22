@@ -1,25 +1,35 @@
-var express = require("express");
+const express = require("express");
 const PORT = process.env.PORT || 5000;
-
-var app = express();
+const bodyParser = require("body-parser");
+const app = express();
 
 app.use(express.static("public"));
+app.use(bodyParser.urlencoded({extended: true}));
 
-app.set("views", "views");
-app.set("view engine", "ejs");
+let rate = 0;
 
 app.get("/", function(req, res) {
   console.log("Received a request for /");
-
-  res.write("This is the root.");
+  res.render("home");
   res.end();
 });
 
 app.get("/home", function(req, res) {
   console.log("Received a request for the home page")
-
   res.render("home");
   res.end();
+
+});
+app.get("/rate", function(req, res){
+  console.log("Received a request for the rate page")
+  res.render("rate", {rate: rate})
+});
+
+app.post("/rate", function(req, res){
+  let weight = req.body.weight;
+  let mail = req.body.mail;
+  // let newRate = {name: name, image: image};
+  res.redirect("/rate");
 });
 
 app.listen(PORT, function() {
