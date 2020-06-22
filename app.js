@@ -20,7 +20,7 @@ app.get("/", function(req, res) {
 });
 
 app.get("/home", getPostage);
-);
+
 // app.get("/rate", function(req, res){
 //   console.log("Received a request for the rate page")
 //   res.render("/rate", {rate: rate})
@@ -37,9 +37,14 @@ getPostage(res, req){
   let weight = req.query.weight;
   let mail = req.query.mail;
   const params = {weight: weight, mail: mail};
-  res.render("/rate", params );
+  postRates(res, weight, mail)
 }
 
+postRatesres(res, weight, mail){
+  const params = { weight: weight, mail:mail };
+  res.render('/rate', params)
+
+}
 app.listen(PORT, function() {
   console.log("The server is up and listening on port 5000");
 });
