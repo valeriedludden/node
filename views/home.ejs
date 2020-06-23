@@ -1,18 +1,14 @@
 <h1>What do you wan to mail?</h1>
 
-<form action="/rates" method="POST">
-    <p>Package Weight<input type="text" name = "weight" placeholder = "Package Weight"></p>
-    <p>Mail Type<input type="text" name = "mail" placeholder = "Letters Stamped"></p>
-    <input type="radio" id="stamped" name="mail">
-    <label for="stamped">Letters Stamped</label>
-    <input type="radio" id="metered" name="mail">
-    <label for="metered">Letters Metered</label>
+<form action="/rate" method="POST">
+    <p>Package Weight in ounces: <input type="number" name="weight"></p>
+    <label for="mails">Type of mail:</label>
+    <select name="mail" id="mail">
+        <option value="Letters Stamped">Letters Stamped 3oz max</option>
+        <option value="Letters Metered">Letters Metered 3.5 oz max</option>
+        <option value="Large Envelopes">Large Envelopes 13 oz max</option>
+        <option value="First Class Package Service">First Class Package Service 2 pounds max</option>
+    </select>
 
-    <input type="radio" id="lenv" name="mail">
-    <label for="lenv">Large Envelopes</label>
-
-    <input type="radio" id="first" name="mail">
-    <label for="first">First Class Package Service</label>
-
-    <a href="/rates"><button>Find my rate</button></a>
+    <a><button type="submit">Find my rate</button></a>
 </form>
