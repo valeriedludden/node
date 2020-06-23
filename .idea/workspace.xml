@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dd6b1fd-32f6-4c47-a389-92d014ad4339" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/home.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/rate.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/rate.ejs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,8 +38,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="735">
-                  <caret line="159" column="17" selection-start-line="159" selection-start-column="17" selection-end-line="159" selection-end-column="17" />
+                <state relative-caret-position="145">
+                  <caret line="15" column="6" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="15" selection-end-column="6" />
                 </state>
               </provider>
             </entry>
@@ -99,8 +96,8 @@
         <option value="$PROJECT_DIR$/node_modules/lodash/package.json" />
         <option value="$PROJECT_DIR$/node_modules/data-parser/package.json" />
         <option value="$PROJECT_DIR$/views/home.ejs" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/rate.ejs" />
+        <option value="$PROJECT_DIR$/app.js" />
       </list>
     </option>
   </component>
@@ -174,16 +171,15 @@
       <updated>1592709606514</updated>
       <workItem from="1592709607631" duration="177000" />
       <workItem from="1592709790302" duration="9419000" />
-      <workItem from="1592848774553" duration="8123000" />
+      <workItem from="1592848774553" duration="8329000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17719000" />
+    <option name="totallyTimeSpent" value="17925000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="34" y="23" width="1340" height="797" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10007582" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -290,8 +286,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="159" column="17" selection-start-line="159" selection-start-column="17" selection-end-line="159" selection-end-column="17" />
+        <state relative-caret-position="145">
+          <caret line="15" column="6" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="15" selection-end-column="6" />
         </state>
       </provider>
     </entry>

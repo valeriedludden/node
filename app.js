@@ -9,16 +9,9 @@ app.set("views", "views");
 app.set("view engine", "ejs");
 
 
-app.get("/", function(req, res) {
-  console.log("Received a request for /");
-
-
-});
-
-// app.get("/home", getPostage);
-app.get("/home", function (req, res) {
+app.get("/", function (req, res) {
   console.log("Received a request for the HOME page");
-  res.render("home")
+  res.render("home");
   res.end()
 });
 
@@ -28,16 +21,10 @@ app.post("/rate", function(req, res){
 
 });
 
-// app.post("/rate", function(req, res){
-//   let weight = req.query.weight;
-//   let mail = req.query.mail;
-//   const params = {weight: weight, mail: mail};
-//   res.render("/rate", params );
-// });
 function getPostage(res, req) {
   let weight = req.body.weight;
   let mail = req.body.mail;
-  postRates(res, weight, mail)
+  postRates(res, weight, mail);
 }
 
 function postRates(res, weight, mail){
